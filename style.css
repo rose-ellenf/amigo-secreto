@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-tertiary:#ff6600;
+    --color-button: #a74102;
+    --color-button-hover:#cd500c;
+    --color-text:#ffffff;
+    --color-white: #ffffff;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0)
+    
 }
 
 /* Estilos gerais */
@@ -17,17 +17,20 @@
 
 body {
     height: 100vh;
-    background-color: var(--color-primary);
-    display: flex;
+    background: url("assets/amigos.webp") no-repeat center center fixed;
+    background-position:center 20% ;
+    margin-top: -40px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+   background-color: #27735580;
+   padding: 20px;
+   border-radius: 20px;
 }
 
 /* Banner */
@@ -41,9 +44,7 @@ body {
 
 /* Seção de entrada */
 .input-section {
-    flex: 60%;
-    background-color: var(--color-secondary);
-    border: 1px solid #000;
+    flex: 50%;
     border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,9 @@ body {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-white);
+    color: #fffb00;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0)
+
 }
 
 .section-title {
@@ -68,6 +71,8 @@ body {
     color: var(--color-primary);
     margin: 10px 0;
     text-align: center;
+    color:#fffb00;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0)
 }
 
 /* Contêineres de entrada e botão */
@@ -130,16 +135,20 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     margin: 20px 0;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0)
+    
+    
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: #00ff37;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0)
 }
 
 /* Botão de sortear título */
