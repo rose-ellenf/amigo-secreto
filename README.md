@@ -28,9 +28,7 @@
 
 📖 [Saiba como contribuir no GitHub](https://docs.github.com/pt/get-started/quickstart/contributing-to-projects)
 
-## 📜 Licença
 
-Este projeto está licenciado sob a Licença MIT.
 
 
 
