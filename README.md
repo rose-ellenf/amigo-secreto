@@ -1,7 +1,8 @@
 # 🎁 **Amigo Secreto**
 
 - **Projeto simples que permite adicionar nomes a uma lista e realizar o sorteio de forma aleatória.**
-- **O objetivo do projeto é praticar a lógica de programação.**
+- **O objetivo do projeto é praticar  Lógica de Programação.**
+- **Projeto realizado durante curso Lógica de Programação da Alura.**
 
 ## ⚙️ Funcionalidades
 - **Adicionar amigos**: Insira os nomes dos amigos e eles serão adicionados à lista.
