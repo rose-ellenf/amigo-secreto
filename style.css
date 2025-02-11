@@ -4,7 +4,7 @@
     --color-button-hover:#cd500c;
     --color-text:#ffe100;
     --color-white: #ffffff;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(0, 0, 0); 
 }
 
 /* Estilos gerais */
@@ -17,9 +17,9 @@
 body {
     height: 100vh;
     background: url("assets/amigos-secreto.jpg") no-repeat center center fixed;
-    background-position:center 4%;
+    background-position: center 4%;
     margin-top: -40px;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     display: flex; 
     justify-content: center;
@@ -69,7 +69,7 @@ body {
     color: var(--color-primary);
     margin: 10px 0;
     text-align: center;
-    color:#fffb00;
+    color: #fffb00;
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
@@ -91,8 +91,9 @@ body {
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Estilos de entrada de texto */
@@ -152,68 +153,56 @@ ul {
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: 300px;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
 
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
     body {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 10px;
-        height: auto;
+        background-size: contain;
+        background-position: center;
     }
-
-    .main-content {
-        width: 95%;
-        padding: 15px;
-        text-align: center;
-    }
-
+    
     .main-title {
-        font-size: 32px;
+        font-size: 36px;
     }
-
+    
     .section-title {
-        font-size: 24px;
+        font-size: 28px;
     }
-
+    
     .input-wrapper {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        width: 100%;
+        gap: 10px;
     }
-
+    
     .input-name {
-        width: 100%;
-        border-radius: 25px;
-        margin-bottom: 10px;
+        width: auto;
+        flex: 1;
     }
-
+    
     .button-add {
-        width: 100%;
-        border-radius: 25px;
+        width: auto;
     }
-
+    
     .button-draw {
         width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .result-list {
-        font-size: 24px;
+        max-width: 250px;
+        font-size: 14px;
     }
 }
