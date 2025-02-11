@@ -1,10 +1,10 @@
 :root {
-    --color-tertiary:#1f7907;
-    --color-button: #318507;
+    --color-tertiary:#d13232;
+    --color-button:#d13232;
     --color-button-hover:#cd500c;
-    --color-text:#ffe100;
-    --color-white: #ffffff;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0); 
+    --color-text:#daa213;
+    --color-white: #ded128;
+    
 }
 
 /* Estilos gerais */
@@ -16,8 +16,9 @@
 
 body {
     height: 100vh;
-    background: url("assets/imagem-amigo-secreto.jpg") no-repeat center center fixed;
-    background-position: center ;
+    background: url("assets/amigo-secreto.jpg") no-repeat center top;
+    background-position: center -50px ;
+    background-color: #c66666; 
     margin-top: -40px;
     background-size:contain;
     background-attachment: fixed;
@@ -27,12 +28,14 @@ body {
 }
 
 .main-content {
-   width: 60%;
-   max-width: 500px;
-   height: auto;
-   background-color: #0000005c;
-   padding: 10px;
-   border-radius: 10px;
+   margin-top: 500px;
+   width: 100%; 
+   max-width: none; 
+   height:auto;
+   background-color: #fdf6e3; 
+   padding: 50px;
+   border-radius: 20px; 
+   
 }
 
 /* Banner */
@@ -41,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    
 }
 
 /* Seção de entrada */
@@ -51,47 +54,48 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
 }
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
+    margin-top: -50px;
+    font-size: 40px;
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-    color: #fffb00;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    color: #ff0000;
+    text-shadow: 2px 2px 8px rgb(255, 191, 0);
 }
 
 .section-title {
     font-family: "Inter", serif;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 600;
     color: var(--color-primary);
     margin: 10px 0;
     text-align: center;
-    color: #fffb00;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    color: #ff0000;
+    text-shadow: 2px 2px 8px rgb(255, 213, 0);
 }
 
 /* Contêineres de entrada e botão */
 .input-wrapper {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     max-width: 600px;
     margin-top: 20px;
     gap: 10px;
 }
 
 .input-name {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
+    width: 70%;
+    padding: 8px;
+    border: 2px solid #ffb300;
     border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .button-container {
@@ -117,9 +121,9 @@ button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    border: 2px solid #000;
+    border: 2px solid #1d1c1c;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0);
     cursor: pointer;
 }
 
@@ -138,21 +142,21 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px 0;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 234, 0);
 }
 
 .result-list {
     margin-top: 15px;
-    color: #00ff37;
-    font-size: 30px;
+    color: #0b8726;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgba(21, 255, 0, 0.91);
 }
 
-/* Botão de sortear título */
+/* Botão sortear */
 .button-draw {
     display: flex;
     align-items: center;
@@ -176,38 +180,39 @@ ul {
 
 
 @media (max-width: 768px) {
-    body {
-        background-size: cover;
-        background-position: center;
+body {
+    background-size: cover;
+    background-position: center;
+
+}
+    
+.main-title {
+    font-size: 36px;
+}
+    
+.section-title {
+    font-size: 28px;
+}
+    
+.input-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     }
     
-    .main-title {
-        font-size: 36px;
-    }
+.input-name {
+    width: auto;
+    flex: 1;
+}
     
-    .section-title {
-        font-size: 28px;
-    }
+.button-add {
+    width: auto;
+}
     
-    .input-wrapper {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .input-name {
-        width: auto;
-        flex: 1;
-    }
-    
-    .button-add {
-        width: auto;
-    }
-    
-    .button-draw {
-        width: 100%;
-        max-width: 250px;
-        font-size: 14px;
-        margin-top: 30px;
+.button-draw {
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
+    margin-top: 30px;
     }
 }
