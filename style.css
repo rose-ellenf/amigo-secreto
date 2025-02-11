@@ -16,10 +16,10 @@
 
 body {
     height: 100vh;
-    background: url("assets/amigos-secreto.jpg") no-repeat center center fixed;
-    background-position: center 4%;
+    background: url("assets/imagem-amigo-secreto.jpg") no-repeat center center fixed;
+    background-position: center ;
     margin-top: -40px;
-    background-size: cover;
+    background-size:contain;
     background-attachment: fixed;
     display: flex; 
     justify-content: center;
@@ -27,8 +27,11 @@ body {
 }
 
 .main-content {
+   width: 60%;
+   max-width: 500px;
+   height: auto;
    background-color: #0000005c;
-   padding: 5px;
+   padding: 10px;
    border-radius: 10px;
 }
 
@@ -171,7 +174,7 @@ ul {
     background-color: var(--color-button-hover);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     body {
         background-size: cover;
